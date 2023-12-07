@@ -51,7 +51,7 @@ class AuthController extends AppBaseController
                 return redirect('login');
             }
             if ($user->email_verified_at) {
-                Session::flash('success', 'Your account already activated. Please do a login');
+                Session::flash('success', 'Votre compte déjà activé. Veuillez vous connecter');
 
                 return redirect('login');
             }
@@ -60,7 +60,7 @@ class AuthController extends AppBaseController
             $user->email_verified_at = Carbon::now();
             $user->save();
             if ($user->set_password) {
-                Session::flash('success', 'Your account is successfully activated. Please do a login');
+                Session::flash('success', 'Votre compte est activé avec succès. Veuillez vous connecter');
 
                 return redirect('login');
             }

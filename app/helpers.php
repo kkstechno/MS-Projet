@@ -100,7 +100,7 @@ function timeElapsedString($datetime, $full = false)
         $string = array_slice($string, 0, 1);
     }
 
-    return $string ? implode(', ', $string).' ago' : 'just now';
+    return $string ? implode(', ', $string).'' : 'maintenant';
 }
 
 /**
@@ -392,7 +392,7 @@ function getCurrenciesClass($currency = null)
         case 'cad':
             return 'fas fa-dollar-sign';
         default:
-            return 'fas fa-dollar-sign';
+            return 'fas fa-euro-sign';
 
     }
 }
