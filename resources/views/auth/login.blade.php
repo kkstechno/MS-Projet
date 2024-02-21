@@ -70,9 +70,9 @@
                         </div>
                         @if(!empty($setting['show_recaptcha']))
                             @php
-                                  $sitekey  = $setting['google_recaptcha_site_key'];
-                                  $secret = $setting['google_recaptcha_secret_key'];
-                                   $captcha = new \Anhskohbo\NoCaptcha\NoCaptcha($secret, $sitekey);
+                                    $sitekey  = $setting['google_recaptcha_site_key'];
+                                    $secret = $setting['google_recaptcha_secret_key'];
+                                    $captcha = new \Anhskohbo\NoCaptcha\NoCaptcha($secret, $sitekey);
                             
                             @endphp
                             <?php echo $captcha->display(); ?>

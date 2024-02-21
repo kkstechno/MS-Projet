@@ -29,7 +29,7 @@
                 <div class="col-md-12 col-lg-12">
                     @yield('content')
                     <div class="simple-footer">
-                        {{ __('Tous droits réservés') }} &copy; {{ date('Y') }} <span class="text-primary">{{ getAppName() }}</span>
+                        {{ __('Tous droits réservés') }} &copy; 2024 | <a href="https://kks-technologies.com/" target="_blank">KKS-TECHNOLOGIES</a>
                     </div>
                 </div>
             </div>
